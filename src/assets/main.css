@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section {
+    width: 95vw;
+    height: 95vh;
+    border: 2px solid;
+    border-radius: 5%;
+    background-color: gray;
+
+
+}
+.number {
+    color: #fff;
+    background-color: hsl(64, 95%, 50%);
+}
+.green {
+    background-color: #07ea6e;
+    color: #fff;
+}
+
+.violeta {
+    background-color: hsl(268, 95%, 49%);
+    color: #fff;
+}
+button {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin: 10px;
+    /* border: #000 solid 1px; */
+
+}
+
+button:hover {
+    box-shadow: 0 3px 10px #07ea6e;
+    border-color: #000
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* .div_img {
+    display: inline-block;
+    
+}
+
+img {
+    border: 0px;
+} */
+
+div {
+    display: inline-flex;
+}
+.div_img {
+    display: inline-flex;
+    
+    
+}
+img {
+    width: 100%;
+}
+
+.div_img img {
+    width: 50%;
+}
+
+input {
+    width: 120px;
+    height: 50px;
+    
+}
+
+.boton_cuadrado {
+    width: 40px;
+    height: 50px;
+    border-radius: 5%;
+    /* margin-bottom: 20px; */
+    font-size: 2rem;
+    /* margin-right: 10px; */
+    box-shadow: 0 5px #999;
+
+}
+
+.boton_cuadrado img {
+    width: 70%;
+}
+
+.boton_cuadrado:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+
+
+}
+
+.div_number{
+    display: inline-block;
+    background: #04AA6D;
+    padding: 5px;
+    margin-top: 15px;
+    
+}
+
+.div_number:hover {background-color: #3e8e41}
+
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: black 1px solid;
+    border-radius: 50%;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* .red {
+    background-color: hsl(0, 95%, 49%);
+    color: #fff;
+} */
