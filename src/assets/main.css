@@ -16,19 +16,25 @@ html {
 main {
     width: 100vw;
     height: 100vh;
-    background-color: white;
+    background-color: wheat;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 section {
-    width: 95vw;
-    height: 95vh;
+    width: auto;
+    height: auto;
     border: 2px solid;
     border-radius: 5%;
     background-color: gray;
-
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    
+ 
 
 }
 .number {
@@ -57,13 +63,7 @@ button:hover {
     box-shadow: 0 3px 10px #07ea6e;
     border-color: #000
 }
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
+
 
 /* .div_img {
     display: inline-block;
@@ -74,9 +74,9 @@ img {
     border: 0px;
 } */
 
-div {
+/* div {
     display: inline-flex;
-}
+} */
 .div_img {
     display: inline-flex;
     
@@ -120,10 +120,17 @@ input {
 }
 
 .div_number{
-    display: inline-block;
+    height: 90px;
+    width: 210px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #04AA6D;
     padding: 5px;
     margin-top: 15px;
+    border-radius: 15px;
     
 }
 
@@ -155,3 +162,8 @@ input {
     background-color: hsl(0, 95%, 49%);
     color: #fff;
 } */
+
+
+.contenedor{
+    display: flex;
+}
