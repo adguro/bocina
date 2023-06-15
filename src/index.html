@@ -1,86 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control Remoto</title>
     <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
+
 <body>
     <main>
         <section>
             <div>
-            <div class="contenedor">
-                <button class="red texto button" onclick="getLocation('O')">
-                    <img src="./assets/icons8-apagar-50.png" alt="">
-                </button>
-                <!-- <button class="number texto" onclick="getLocation('M')">Mode</button> -->
-                <!-- <button class="green texto" onclick="getLocation('X')">X</button> -->
-                <button class="green texto button" onclick="getLocation('P')">
-                    <div class="div_img">
-                        <img src="./assets/icons8-play-50.png" alt="">
-                        <img src="./assets/icons8-pausa-50.png" alt="">
-                    </div>
+                <div class="contenedor">
+                    <button id="O" class="red texto button" onclick="getLocation('O')">
+                        <img src="./assets/icons8-apagar-50.png" alt="">
+                    </button>
+                    <!-- <button class="number texto" onclick="getLocation('M')">Mode</button> -->
+                    <!-- <button class="green texto" onclick="getLocation('X')">X</button> -->
+                    <button id="P" class="green texto button" onclick="getLocation('P')">
+                        <div class="div_img">
+                            <img src="./assets/icons8-play-50.png" alt="">
+                            <img src="./assets/icons8-pausa-50.png" alt="">
+                        </div>
 
-                </button>
-            </div>
-            <div class="contenedor">
-                <!-- <button class="green texto" onclick="getLocation('P')">&gt;||</button> -->
-                <button class="number texto button" onclick="getLocation('L')">
-                    <img src="./assets/icons8-rebobinar-50.png" alt="">
-                </button>
-                <button class="number texto button" onclick="getLocation('R')">
-                    <img src="./assets/icons8-avance-rapido-50.png" alt="">
-                </button>
-            </div>
-        </div>
-        <div> 
-            <div class="contenedor">
-                <!-- <button class="violeta texto" onclick="getLocation('Q')">EQ</button> -->
-                <button class="violeta button" onclick="getLocation('E')">
-                    <img src="./assets/icons8-volumen-bajo-50.png" alt="-">
-                </button>
-                <button class="violeta button" onclick="getLocation('A')">
-                    <img src="./assets/icons8-volumen-alto-50.png" alt="+">
-                </button>
-            </div>
-            <!-- <div>
-                <button class="number" onclick="getLocation('0')">0</button>
-                <button class="red" onclick="getLocation('S')">S</button>
-                <button class="red texto" onclick="getLocation('C')">SCAN</button>
+                    </button>
+                </div>
+                <div class="contenedor">
+                    <!-- <button class="green texto" onclick="getLocation('P')">&gt;||</button> -->
+                    <button id="L" class="number texto button" onclick="getLocation('L')">
+                        <img src="./assets/icons8-rebobinar-50.png" alt="">
+                    </button>
+                    <button id="R" class="number texto button" onclick="getLocation('R')">
+                        <img src="./assets/icons8-avance-rapido-50.png" alt="">
+                    </button>
+                </div>
             </div>
             <div>
-                <button class="number" onclick="getLocation('1')">1</button>
-                <button class="number" onclick="getLocation('2')">2</button>
-                <button class="number" onclick="getLocation('3')">3</button>
+                <div class="contenedor">
+                    <!-- <button class="violeta texto" onclick="getLocation('Q')">EQ</button> -->
+                    <button id="E" class="violeta button" onclick="getLocation('E')">
+                        <img src="./assets/icons8-volumen-bajo-50.png" alt="-">
+                    </button>
+                    <button id="A" class="violeta button" onclick="getLocation('A')">
+                        <img src="./assets/icons8-volumen-alto-50.png" alt="+">
+                    </button>
+                </div>
+                <div class="div_number">
+                    <input type="number" id="numero" placeholder="0000" />
+                    <button id="N" class="boton_cuadrado" onclick="getLocation('N')">
+                        <img src="./assets/icons8-entrar-50.png" alt="">
+                    </button>
+                </div>
             </div>
-            <div>
-                <button class="number" onclick="getLocation('4')">4</button>
-                <button class="number" onclick="getLocation('5')">5</button>
-                <button class="number" onclick="getLocation('6')">6</button>
-            </div>
-                <div>
-                <button class="number" onclick="getLocation('7')">7</button>
-                <button class="number" onclick="getLocation('8')">8</button>
-                <button class="number" onclick="getLocation('9')">9</button>
-            </div> -->
 
-            <div class="div_number">
-                <input type="number" id="numero" placeholder="0000" />
-                <button class="boton_cuadrado" onclick="getLocation('N')">
-                    <img src="./assets/icons8-entrar-50.png" alt="">
-                </button>
-            </div>
-        </div>
-            
         </section>
     </main>
-    <!-- <button onclick="getLocation()" class="boton">Presionar</button> -->
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
     <script src="./assets/index.js">
-        // <a target="_blank" href="https://icons8.com/icon/20925/apagar">Apagar</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     </script>
 </body>
+
 </html>
